@@ -1,5 +1,8 @@
 {
   "name": "rails-todo",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "material-dashboard": "^2.1.0"
+  }
 }

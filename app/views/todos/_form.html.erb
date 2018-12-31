@@ -1,32 +1,40 @@
-<%= form_with(model: todo, local: true) do |form| %>
-  <% if todo.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(todo.errors.count, "error") %> prohibited this todo from being saved:</h2>
+<div class="card">
+  <div class="card-body">
+    <%= form_with(model: todo, local: true) do |form| %>
+      <% if todo.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(todo.errors.count, "error") %> prohibited this todo from being saved:</h2>
 
-      <ul>
-      <% todo.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+          <ul>
+          <% todo.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
+      <div class="field">
+        <%= form.label :title, class: 'bmd-label-floating' %>
+        <% if readonly ||= false %>
+          <%= form.text_field :title, class: 'form-control' %>
+        <% else %>
+          <%= form.text_field :title, readonly: readonly, class: 'form-control' %>
+        <% end %>
+      </div>
 
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_field :body %>
-  </div>
+      <div class="field">
+        <%= form.label :body, class: 'bmd-label-floating' %>
+        <%= form.text_field :body, class: 'form-control' %>
+      </div>
 
-  <div class="field">
-    <%= form.label :status %>
-    <%= form.select :status, Todo.statuses.keys %>
-  </div>
+      <div class="field">
+        <%= form.label :status, class: 'bmd-label-floating' %>
+        <%= form.select :status, Todo.statuses.keys, {}, class: "form-control" %>
+      </div>
 
-  <div class="actions">
-    <%= form.submit %>
+      <div class="actions">
+        <%= form.submit class: %w(btn btn-primary pull-right) %>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>  
