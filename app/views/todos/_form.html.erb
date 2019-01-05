@@ -15,11 +15,7 @@
 
       <div class="field">
         <%= form.label :title, class: 'bmd-label-floating' %>
-        <% if readonly ||= false %>
-          <%= form.text_field :title, class: 'form-control' %>
-        <% else %>
-          <%= form.text_field :title, readonly: readonly, class: 'form-control' %>
-        <% end %>
+        <%= form.text_field :title, class: 'form-control' %>
       </div>
 
       <div class="field">
