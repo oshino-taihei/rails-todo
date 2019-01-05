@@ -3,22 +3,24 @@
 
 <div class="card">
   <div class="card-body">
-    <table class="table table-hover">
-      <tbody>
-        <tr>
-          <th>Title</th>
-          <td><%= @todo.title %></td>
-        </tr>
-        <tr>
-          <th>Body</th>
-          <td><%= @todo.body %></td>
-        </tr>
-        <tr>
-          <th>Status</th>
-          <td><%= @todo.status %></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <tbody>
+          <tr>
+            <th>Title</th>
+            <td><%= @todo.title %></td>
+          </tr>
+          <tr>
+            <th>Body</th>
+            <td><%= @todo.body %></td>
+          </tr>
+          <tr>
+            <th>Status</th>
+            <td><%= @todo.status %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 
