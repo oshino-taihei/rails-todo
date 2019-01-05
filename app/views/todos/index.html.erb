@@ -9,9 +9,9 @@
     <table class="table table-hover">
       <thead>
         <tr>
-          <th>Title</th>
-          <th>Body</th>
-          <th>Status</th>
+          <th><%= Todo.human_attribute_name(:title) %></th>
+          <th><%= Todo.human_attribute_name(:body) %></th>
+          <th><%= Todo.human_attribute_name(:status) %></th>
           <th colspan="3"></th>
         </tr>
       </thead>
