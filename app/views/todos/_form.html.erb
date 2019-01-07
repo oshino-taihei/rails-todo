@@ -28,6 +28,11 @@
         <%= form.select :status, Todo.statuses.keys, {}, class: "form-control" %>
       </div>
 
+      <div class="field">
+        <%= form.label :user_id, class: 'bmd-label-floating' %>
+        <%= form.collection_select :user_id, User.all, :id, :name, {include_blank: '-'}, class: "form-control" %>
+      </div>
+
       <div class="actions">
         <%= form.submit class: %w(btn btn-primary pull-right) %>
       </div>
