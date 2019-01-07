@@ -10,38 +10,9 @@
   </head>
 
   <body>
-    <div class="sidebar" data-color="purple" data-background-color="white">
-    <div class="logo">
-      <a href="/" class="simple-text logo-normal">
-        Todo App
-      </a>
-    </div>
-    <div class="sidebar-wrapper">
-      <ul class="nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">
-            <i class="material-icons">home</i>
-            <p>Home</p>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="/todos">
-            <i class="material-icons">content_paste</i>
-            <p>Todo List</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/admin/users">
-            <i class="material-icons">person</i>
-            <p>User List</p>
-          </a>
-        </li>
-          </a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
+  <% if current_user %>
+    <%= render 'sidebar' %>
+  <% end %>
 
   <div class="main-panel">
     <%= yield %>
