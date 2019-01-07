@@ -11,6 +11,6 @@ users = User.create([
         email: 'user',
         admin: false,
         password: 'user',
-        password_confirmation: 'admin',
+        password_confirmation: 'user',
     },
 ])
