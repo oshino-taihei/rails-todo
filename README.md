@@ -16,3 +16,4 @@ https://rails-todo-94928.herokuapp.com/
 * 「ToDo List」よりToDoを作成、編集、削除できる
 * 「User List」よりユーザアカウントを作成、編集、削除できる
 * 「Logout」より、ログアウトできる
+* 「URL末尾に.jsonを付与したパスをエンドポイントとしたAPIモードとしての利用も可能
