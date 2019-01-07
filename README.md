@@ -1,24 +1,18 @@
-# README
+# ToDo管理アプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails学習を目的として、ToDoリストを管理するアプリケーションを作成した。
 
-Things you may want to cover:
+## URL
 
-* Ruby version
+Heroku上にデプロイしたアプリケーションのURL
 
-* System dependencies
+https://rails-todo-94928.herokuapp.com/
 
-* Configuration
+## 実装した仕様
 
-* Database creation
+実装した仕様と機能を実装したページを以下に示す。
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* 「Login」よりemail、password認証でログインできる
+* 「ToDo List」よりToDoを作成、編集、削除できる
+* 「User List」よりユーザアカウントを作成、編集、削除できる
+* 「Logout」より、ログアウトできる
