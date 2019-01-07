@@ -4,16 +4,17 @@
     <div class="card">
         <div class="card-body">
             <%= form_with scope: :sessions, local: true do |form| %>
-            <div class="form-group">
-                <%= form.label :email, 'email' %>
-                <%= form.text_field :email, class: 'form-control' %>
-            </div>
+                <div class="form-group">
+                    <%= form.label :email, 'email' %>
+                    <%= form.text_field :email, class: 'form-control' %>
+                </div>
 
-            <div class="form-group">
-                <%= form.label :password, 'password' %>
-                <%= form.password_field :password, class: 'form-control' %>
-            </div>
-            <%= form.submit 'Login', class: 'btn btn-primary' %>
+                <div class="form-group">
+                    <%= form.label :password, 'password' %>
+                    <%= form.password_field :password, class: 'form-control' %>
+                </div>
+                <%= form.submit 'Login', class: 'btn btn-primary' %>
+            <% end %>
         </div>
     </div>
 </div>
